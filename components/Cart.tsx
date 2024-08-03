@@ -43,12 +43,12 @@ function Cart() {
 
   return (
     <div
-      className={`h-full w-full absolute top-0 transition-all ease-in-out duration-300 right-[-100%]`}
+      className={`h-full w-full absolute top-0 transition-all ease-in-out duration-300`}
       ref={cartBodyRef}
       onClick={() => dispatch(hideCartModal())}
     >
       <div
-        className={`bg-white w-[500px] h-full absolute top-0 right-0`}
+        className={`bg-white h-full sm:w-full md:w-[500px] absolute top-0 right-0`}
         onClick={handleCartClick}
       >
         <div className="flex flex-col items-center justify-center w-full h-full">
