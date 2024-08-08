@@ -12,7 +12,7 @@ const CartIcon = () => {
   return (
     <div
       onClick={products.length ? () => dispatch(showCartModal()) : () => {}}
-      className={`relative inline-block cursor-pointer mr-6`}
+      className={`relative inline-block cursor-pointer mr-2`}
     >
       <FaShoppingCart className="text-[2rem] text-white" />
       {products.length > 0 && (
