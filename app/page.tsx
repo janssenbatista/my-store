@@ -6,9 +6,10 @@ import ProductList from "@/components/ProductList";
 import { useAppSelector } from "@/features/store";
 import { useState, useEffect } from "react";
 import { MdKeyboardArrowUp } from "react-icons/md";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function HomePage() {
-  const { items } = useAppSelector((state) => state.cart);
+  useAppSelector((state) => state.cart);
 
   const [scrollPosition, setScrollPosition] = useState(0);
   const [showBadge, setShowBadge] = useState(false);
