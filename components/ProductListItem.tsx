@@ -33,7 +33,7 @@ function ProductListItem({ product }: ListItemProps) {
   return (
     <section className="flex flex-col justify-center items-center gap-1 p-2 bg-white min-h-[350px] shadow-lg rounded-md">
       <div className="flex flex-col flex-1 justify-center items-center w-full">
-        <div className="w-[200px] h-[200px] flex justify-center">
+        <div className="w-[200px] h-[200px] flex justify-center items-start">
           <img
             alt={product.title}
             src={product.image}
