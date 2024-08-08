@@ -28,7 +28,7 @@ function Cart() {
       >
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>
-            <h3>Carrinho de Compras</h3>
+            <h3 className="my-0">Carrinho de Compras</h3>
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body className="p-0">
