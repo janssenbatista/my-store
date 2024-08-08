@@ -33,14 +33,14 @@ function ProductListItem({ product }: ListItemProps) {
   return (
     <section className="flex flex-col justify-center items-center gap-1 p-2 bg-white min-h-[350px] shadow-lg rounded-md">
       <div className="flex flex-col flex-1 justify-center items-center w-full">
-        <div className="w-[200px] h-[200px]">
+        <div className="w-[200px] h-[200px] flex justify-center">
           <img
             alt={product.title}
             src={product.image}
             className="p-2 max-w-[200px] max-h-[200px]"
           />
         </div>
-        <h2 className="text-left w-full">{product.title}</h2>
+        <h4 className="text-left w-full">{product.title}</h4>
         <div className="flex items-center justify-between w-full">
           <p className="font-bold text-2xl">
             {currencyFormatter.format(product.price)}
